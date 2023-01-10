@@ -6,7 +6,7 @@ require 'net/http'
 require 'uri'
 require 'json'
 
-MORALIS_API_KEY = ''
+MORALIS_API_KEY = ENV["MORALIS_API_KEY"]
 
 # These are the contracts to you want to download.
 # Note that this WILL NOT work for OpenSea contracts, only contracts that are custom to the given project.
