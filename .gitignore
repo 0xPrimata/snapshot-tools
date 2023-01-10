@@ -1,0 +1,6 @@
+.env
+node_modules
+data.js
+test.js
+helper
+node_modules
