@@ -1,15 +1,10 @@
-# Quick & Easy NFT Holders Snapshot
+# Snapshot tools
 
-This is a script that allows you to take a quick Snapshot of all wallet addresses that hold an inputted NFT (ERC721) project using the Moralis API. 
-<br><br>
-The script returns a JS object (look up table) of a walletAddress to the number of NFTs they own of that project. Also logs some summary statistics of total number of unique holders, number of tokens it could retrieve, and what token numbers were missing from the Moralis API.
+## fetchMetadata.js
+retrieve metadata data and write it locally
 
-Moralis API Doc:
-https://deep-index.moralis.io/api-docs/#/
+## snapshot.rb
+use moralis to snapshot collections. Get your own key and add to .env
 
-
-### What The Output Looks Like
-![img1](./images/output0.png)
-![img2](./images/output1.png)
-### Refernce output (OpenSea rounds up for # Owners)
-![img3](./images/cpOs.png)
+## mergesnapshots.py
+merge .csv files (snapshot.rb generates .csv files) and merge them, making sure that you only end up with unique wallets
